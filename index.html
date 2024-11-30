@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wikimedia Commons Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Wikimedia Commons Gallery</h1>
+    <div class="input-container">
+      <input id="categoryInput" type="text" placeholder="Enter category name">
+      <button id="fetchButton">Fetch Images</button>
+    </div>
+
+    <!-- Sorting dropdown -->
+    <div class="sort-container">
+      <select id="sortSelect">
+        <option value="date">Sort by Date</option>
+        <option value="title">Sort by Title</option>
+      </select>
+    </div>
+
+    <!-- Thumbnail size control -->
+    <div class="size-container">
+      <label for="thumbnailSize">Thumbnail Size:</label>
+      <input id="thumbnailSize" type="range" min="20" max="50" value="15">
+    </div>
+
+    <div id="gallery" class="gallery"></div>
+    <div id="loading" class="loading hidden">Loading...</div>
+    <div id="loadMoreButton" class="hidden">
+      <button id="loadMore">Load More</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

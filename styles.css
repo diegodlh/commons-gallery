@@ -1,0 +1,161 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+  }
+  
+  /* Container styling */
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Heading styling */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  /* Input and button container */
+  .input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Sorting dropdown container */
+  .sort-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .sort-container select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  /* Thumbnail size slider */
+  .size-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .size-container label {
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  .size-container input {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Gallery styling */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Dynamic layout */
+    gap: 5px;
+  }
+  
+  .gallery .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+    display: block; /* Prevent extra spaces below images */
+    border-radius: 5px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .gallery .image-container:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+  }
+  
+  /* Image title on hover */
+  .image-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .image-title {
+    opacity: 1;
+  }
+  
+  /* Loading text */
+  .loading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* "Load More" button */
+  #loadMore {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  #loadMore:hover {
+    background-color: #0056b3;
+  }
+  
