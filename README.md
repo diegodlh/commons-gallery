@@ -6,9 +6,11 @@ There are some alternatives, like the [Category Slideshow gadget](https://common
 
 When I took photos for the [2024 IGLA+ Championship](https://commons.wikimedia.org/wiki/Category:2024_IGLA%2B_Championship) I wanted to have a simple way to share them with the participants (most of whom are not familiar with Wikimedia Commons), that would work nicely on mobile.
 
-## Features
+This [Wikimedia Commons category gallery viewer](https://diegodlh.github.io/commons-gallery/) is a very basic prototype of that idea.
 
-This **Wikimedia Commons category gallery viewer** is a very basic prototype of that idea.
+![commons-gallery](https://github.com/user-attachments/assets/9e563644-df58-4dfd-997a-b8174814f8d3)
+
+## Features
 
 Some of its features include:
 * Enter a Wikimedia Commons category name and click fetch to show the gallery.
